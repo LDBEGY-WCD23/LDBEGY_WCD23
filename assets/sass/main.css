@@ -403,6 +403,10 @@ header h1 {
   text-transform: uppercase;
 }
 
+.Scientific span {
+  font-size: 14px;
+}
+
 .Scientific svg {
   color: #11A5E4;
   -webkit-margin-end: 6px;
