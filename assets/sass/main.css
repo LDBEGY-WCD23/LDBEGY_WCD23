@@ -1,0 +1,515 @@
+@font-face {
+  font-family: "LOREAL";
+  src: url("../webfonts/LOREAL-Essentielle-Light.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  direction: ltr;
+  text-align: start;
+  overflow-x: hidden;
+  font-weight: 'LOREAL';
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0DA6DF;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li,
+label {
+  text-transform: capitalize;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  background: transparent;
+}
+
+.theme {
+  --primary-color: #0DA6DF;
+}
+
+header {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    height: 400px;
+  }
+}
+
+header:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+header img {
+  width: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 999;
+}
+
+header h1 {
+  color: #fff;
+  font-weight: bold;
+  z-index: 999;
+}
+
+.slider {
+  padding: 0px 0;
+}
+
+.slider img {
+  width: 355px;
+  height: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  mix-blend-mode: color-burn;
+  aspect-ratio: 3/2;
+}
+
+.btns {
+  padding: 30px 0;
+  width: 100%;
+}
+
+.btns a {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 1px solid #000;
+  width: 300px;
+  border-radius: 0px;
+  color: #000;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.Accommodation,
+.Symposiums,
+.Scientific,
+.food,
+.shopping {
+  padding-bottom: 10px;
+}
+
+.Accommodation .title,
+.Symposiums .title,
+.Scientific .title,
+.food .title,
+.shopping .title {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.Accommodation .title svg,
+.Symposiums .title svg,
+.Scientific .title svg,
+.food .title svg,
+.shopping .title svg {
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+  color: #000;
+}
+
+.Accommodation .description,
+.Symposiums .description,
+.Scientific .description,
+.food .description,
+.shopping .description {
+  padding: 30px 0;
+}
+
+.Accommodation .description img,
+.Symposiums .description img,
+.Scientific .description img,
+.food .description img,
+.shopping .description img {
+  width: 100%;
+  border-radius: 3px;
+  height: 300px;
+}
+
+.Accommodation .description .col-8,
+.Symposiums .description .col-8,
+.Scientific .description .col-8,
+.food .description .col-8,
+.shopping .description .col-8 {
+  padding-left: 5px;
+}
+
+.Accommodation .description .col-4,
+.Symposiums .description .col-4,
+.Scientific .description .col-4,
+.food .description .col-4,
+.shopping .description .col-4 {
+  padding-right: 0;
+}
+
+.Accommodation .description .desc_title,
+.Symposiums .description .desc_title,
+.Scientific .description .desc_title,
+.food .description .desc_title,
+.shopping .description .desc_title {
+  padding: 15px 0;
+}
+
+.Accommodation .description .desc_title h5,
+.Symposiums .description .desc_title h5,
+.Scientific .description .desc_title h5,
+.food .description .desc_title h5,
+.shopping .description .desc_title h5 {
+  font-weight: bold;
+  color: #000;
+  font-size: 16px;
+}
+
+.Accommodation .description .desc_title a,
+.Symposiums .description .desc_title a,
+.Scientific .description .desc_title a,
+.food .description .desc_title a,
+.shopping .description .desc_title a {
+  color: #11A5E4;
+  font-weight: bold;
+}
+
+.Accommodation .description .desc_title p,
+.Symposiums .description .desc_title p,
+.Scientific .description .desc_title p,
+.food .description .desc_title p,
+.shopping .description .desc_title p {
+  line-height: 1.7;
+  color: #000;
+}
+
+.Accommodation .pdfs .pdf_item,
+.Symposiums .pdfs .pdf_item,
+.Scientific .pdfs .pdf_item,
+.food .pdfs .pdf_item,
+.shopping .pdfs .pdf_item {
+  margin-bottom: 10px;
+  width: 100%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Accommodation .pdfs .pdf_item:nth-child(odd),
+.Symposiums .pdfs .pdf_item:nth-child(odd),
+.Scientific .pdfs .pdf_item:nth-child(odd),
+.food .pdfs .pdf_item:nth-child(odd),
+.shopping .pdfs .pdf_item:nth-child(odd) {
+  background-image: -webkit-gradient(linear, right top, left top, from(#0da6df45), to(#FFFFFF));
+  background-image: linear-gradient(to left, #0da6df45, #FFFFFF);
+}
+
+.Accommodation .pdfs .pdf_item:nth-child(even),
+.Symposiums .pdfs .pdf_item:nth-child(even),
+.Scientific .pdfs .pdf_item:nth-child(even),
+.food .pdfs .pdf_item:nth-child(even),
+.shopping .pdfs .pdf_item:nth-child(even) {
+  background-image: -webkit-gradient(linear, left top, right top, from(#0da6df45), to(#FFFFFF));
+  background-image: linear-gradient(to right, #0da6df45, #FFFFFF);
+}
+
+.Accommodation .pdfs .pdf_item img,
+.Symposiums .pdfs .pdf_item img,
+.Scientific .pdfs .pdf_item img,
+.food .pdfs .pdf_item img,
+.shopping .pdfs .pdf_item img {
+  width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Accommodation .pdfs .pdf_item .pdf_desc,
+.Symposiums .pdfs .pdf_item .pdf_desc,
+.Scientific .pdfs .pdf_item .pdf_desc,
+.food .pdfs .pdf_item .pdf_desc,
+.shopping .pdfs .pdf_item .pdf_desc {
+  background-color: #11A5E4;
+  margin-top: -26px;
+  padding: 15px 6px !important;
+  z-index: 9999;
+  position: relative;
+  width: 350px;
+}
+
+.Accommodation .pdfs .pdf_item .pdf_desc h6,
+.Symposiums .pdfs .pdf_item .pdf_desc h6,
+.Scientific .pdfs .pdf_item .pdf_desc h6,
+.food .pdfs .pdf_item .pdf_desc h6,
+.shopping .pdfs .pdf_item .pdf_desc h6 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.Accommodation .pdfs .pdf_item .pdf_desc button,
+.Symposiums .pdfs .pdf_item .pdf_desc button,
+.Scientific .pdfs .pdf_item .pdf_desc button,
+.food .pdfs .pdf_item .pdf_desc button,
+.shopping .pdfs .pdf_item .pdf_desc button {
+  background-color: #fff;
+  border-radius: 0;
+  padding: 5px 7px;
+}
+
+.Accommodation .pdfs .pdf_item .pdf_desc button i,
+.Symposiums .pdfs .pdf_item .pdf_desc button i,
+.Scientific .pdfs .pdf_item .pdf_desc button i,
+.food .pdfs .pdf_item .pdf_desc button i,
+.shopping .pdfs .pdf_item .pdf_desc button i {
+  font-size: 15px;
+}
+
+.Accommodation .modal-content,
+.Symposiums .modal-content,
+.Scientific .modal-content,
+.food .modal-content,
+.shopping .modal-content {
+  border: 0 !important;
+}
+
+.Accommodation .modal-content .modal-body,
+.Symposiums .modal-content .modal-body,
+.Scientific .modal-content .modal-body,
+.food .modal-content .modal-body,
+.shopping .modal-content .modal-body {
+  background-color: #11A5E4;
+  border-radius: 5px;
+}
+
+.Accommodation .modal-content button,
+.Symposiums .modal-content button,
+.Scientific .modal-content button,
+.food .modal-content button,
+.shopping .modal-content button {
+  background-color: #fff;
+  border: 1px solid #AEA9A9;
+  position: absolute;
+  top: -13px;
+  right: 10px;
+  color: #000;
+  padding: 5px;
+  z-index: 9999;
+  opacity: 1;
+  border-radius: 50%;
+  padding: 7px;
+  font-size: 12px;
+}
+
+.Accommodation .modal-content span,
+.Symposiums .modal-content span,
+.Scientific .modal-content span,
+.food .modal-content span,
+.shopping .modal-content span {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.Accommodation .modal-content span:first-of-type,
+.Symposiums .modal-content span:first-of-type,
+.Scientific .modal-content span:first-of-type,
+.food .modal-content span:first-of-type,
+.shopping .modal-content span:first-of-type {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.Accommodation .modal-content span:nth-child(2),
+.Symposiums .modal-content span:nth-child(2),
+.Scientific .modal-content span:nth-child(2),
+.food .modal-content span:nth-child(2),
+.shopping .modal-content span:nth-child(2) {
+  font-weight: 700;
+  color: #FFC011;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.Scientific h5 {
+  text-transform: uppercase;
+}
+
+.Scientific svg {
+  color: #11A5E4;
+  -webkit-margin-end: 6px;
+          margin-inline-end: 6px;
+  font-size: 18px;
+}
+
+.Scientific a {
+  font-weight: bold;
+}
+
+.Scientific .col-6.test {
+  padding-right: 0 !important;
+}
+
+.Scientific .col-6.test2 {
+  padding-left: 5px !important;
+}
+
+.shopping .shopping_item {
+  margin-bottom: 30px !important;
+  width: 100%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopping .shopping_item img {
+  width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 370px) {
+  .shopping .shopping_item img {
+    width: 320px;
+  }
+}
+
+.shopping .shopping_item .shopping_desc {
+  background-color: #fff;
+  margin-top: -69px;
+  padding: 15px 6px !important;
+  z-index: 9999;
+  position: relative;
+  width: 350px;
+  border: 1px solid #707070;
+}
+
+@media (max-width: 370px) {
+  .shopping .shopping_item .shopping_desc {
+    width: 320px;
+  }
+}
+
+.shopping .shopping_item .shopping_desc span {
+  color: #000;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.shopping .shopping_item .shopping_desc a {
+  border-radius: 9px;
+  padding: 5px 7px;
+  color: #11A5E4;
+  font-weight: bold;
+}
+
+.shopping ._link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #000;
+  width: 330px;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+}
+
+.shopping ._link a {
+  color: #000;
+  text-transform: uppercase;
+}
+
+.shopping ._link span {
+  background: #11A5E4;
+  padding: 7px 10px;
+  color: #fff;
+  -webkit-margin-start: 8px;
+          margin-inline-start: 8px;
+  border: 1px solid #000;
+}
+/*# sourceMappingURL=main.css.map */

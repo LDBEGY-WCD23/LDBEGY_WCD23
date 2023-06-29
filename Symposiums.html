@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LDBEGY_WCD23</title>
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/sass/main.scss" />
+    <link rel="stylesheet" href="assets/sass/main.css" />
+  </head>
+  <body>
+    <!-- start header -->
+    <section class="Symposiums">
+      <div class="title">
+        <h3>
+          <a href="index.html"> <i class="fas fa-arrow-left"></i> </a>
+          Brands symposiums
+        </h3>
+      </div>
+      <div
+        class="pdfs d-flex justify-content-center align-items-center flex-column pt-5"
+        style="gap: 20px"
+      >
+        <div class="pdf_item wow fadeInLeft"
+        data-wow-duration="0.5s"
+        data-wow-delay="0.5s">
+          <img src="./assets/images/FEeZjpcXwAEOuT- (1).png" alt="" />
+          <div
+            class="pdf_desc d-flex justify-content-between align-items-center flex-row p-2"
+          >
+            <h6>La roche posay symposium</h6>
+            <button id="pdf1"><i class="fas fa-download"></i></button>
+          </div>
+        </div>
+        <div class="pdf_item wow fadeInLeft"
+        data-wow-duration="0.6s"
+        data-wow-delay="0.5s">
+          <img
+            src="./assets/images/28516733_1687533717973920_1144449360686774707_o.png"
+            alt=""
+          />
+          <div
+            class="pdf_desc d-flex justify-content-between align-items-center flex-row p-2"
+          >
+            <h6>Vichy symposium</h6>
+            <button id="pdf2"><i class="fas fa-download"></i></button>
+          </div>
+        </div>
+        <div class="pdf_item wow fadeInLeft"
+        data-wow-duration="0.7s"
+        data-wow-delay="0.5s">
+          <img src="./assets/images/IMG_4426-1.png" alt="" />
+          <div
+            class="pdf_desc d-flex justify-content-between align-items-center flex-row p-2"
+          >
+            <h6>Cerave symposium</h6>
+            <button id="pdf3"><i class="fas fa-download"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end header -->
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      document
+        .getElementById("pdf1")
+        .addEventListener("click", function () {
+          // Generate your PDF file or provide the URL of the PDF file
+          var pdfUrl = "/assets/Ahmed Yousry - Frontend developer.pdf";
+
+          // Create a hidden anchor element
+          var link = document.createElement("a");
+          link.href = pdfUrl;
+          link.download = "LRP WCD - SYMPOSIUM FLYER.pdf"; // Set the desired file name here
+
+          // Append the anchor element to the document body
+          document.body.appendChild(link);
+
+          // Trigger the click event
+          link.click();
+
+          // Cleanup
+          document.body.removeChild(link);
+        });
+    </script>
+    <script>
+      document
+        .getElementById("pdf2")
+        .addEventListener("click", function () {
+          // Generate your PDF file or provide the URL of the PDF file
+          var pdfUrl = "/assets/VICHY SYMPO WCD Flyer 2023.pdf";
+
+          // Create a hidden anchor element
+          var link = document.createElement("a");
+          link.href = pdfUrl;
+          link.download = "Vichy-symposium.pdf"; // Set the desired file name here
+
+          // Append the anchor element to the document body
+          document.body.appendChild(link);
+
+          // Trigger the click event
+          link.click();
+
+          // Cleanup
+          document.body.removeChild(link);
+        });
+    </script>
+    <script>
+      document
+        .getElementById("pdf3")
+        .addEventListener("click", function () {
+          // Generate your PDF file or provide the URL of the PDF file
+          var pdfUrl = "/assets/CeraVe WCD 2023 Symposium Flyer_Final.pdf";
+
+          // Create a hidden anchor element
+          var link = document.createElement("a");
+          link.href = pdfUrl;
+          link.download = "Cerave-symposium.pdf"; // Set the desired file name here
+
+          // Append the anchor element to the document body
+          document.body.appendChild(link);
+
+          // Trigger the click event
+          link.click();
+
+          // Cleanup
+          document.body.removeChild(link);
+        });
+    </script>
+  </body>
+</html>
