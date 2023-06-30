@@ -253,6 +253,7 @@ header h1 {
 .Symposiums .description .desc_title a {
   color: #3C6EB0;
   font-weight: bold;
+  margin-top: -8px;
 }
 
 .Accommodation .description .desc_title p,
@@ -287,26 +288,42 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 9;
 }
 
-.Accommodation .pdfs .pdf_item:nth-child(odd),
-.Symposiums .pdfs .pdf_item:nth-child(odd),
-.Scientific .pdfs .pdf_item:nth-child(odd),
-.food .pdfs .pdf_item:nth-child(odd),
-.shopping .pdfs .pdf_item:nth-child(odd),
-.Symposiums .pdfs .pdf_item:nth-child(odd) {
-  background-image: -webkit-gradient(linear, right top, left top, from(#0da6df45), to(#FFFFFF));
-  background-image: linear-gradient(to left, #0da6df45, #FFFFFF);
+.Accommodation .pdfs .pdf_item:nth-child(odd):after,
+.Symposiums .pdfs .pdf_item:nth-child(odd):after,
+.Scientific .pdfs .pdf_item:nth-child(odd):after,
+.food .pdfs .pdf_item:nth-child(odd):after,
+.shopping .pdfs .pdf_item:nth-child(odd):after,
+.Symposiums .pdfs .pdf_item:nth-child(odd):after {
+  position: absolute;
+  content: "";
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#3c6eb093), to(#FFFFFF));
+  background-image: linear-gradient(to bottom left, #3c6eb093, #FFFFFF);
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  z-index: 8;
 }
 
-.Accommodation .pdfs .pdf_item:nth-child(even),
-.Symposiums .pdfs .pdf_item:nth-child(even),
-.Scientific .pdfs .pdf_item:nth-child(even),
-.food .pdfs .pdf_item:nth-child(even),
-.shopping .pdfs .pdf_item:nth-child(even),
-.Symposiums .pdfs .pdf_item:nth-child(even) {
-  background-image: -webkit-gradient(linear, left top, right top, from(#0da6df45), to(#FFFFFF));
-  background-image: linear-gradient(to right, #0da6df45, #FFFFFF);
+.Accommodation .pdfs .pdf_item:nth-child(even):before,
+.Symposiums .pdfs .pdf_item:nth-child(even):before,
+.Scientific .pdfs .pdf_item:nth-child(even):before,
+.food .pdfs .pdf_item:nth-child(even):before,
+.shopping .pdfs .pdf_item:nth-child(even):before,
+.Symposiums .pdfs .pdf_item:nth-child(even):before {
+  position: absolute;
+  content: "";
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#3c6eb093), to(#FFFFFF));
+  background-image: linear-gradient(to bottom right, #3c6eb093, #FFFFFF);
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  z-index: 8;
 }
 
 .Accommodation .pdfs .pdf_item img,
@@ -318,6 +335,7 @@ header h1 {
   width: 350px;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 9;
 }
 
 @media (max-width: 355px) {
@@ -337,6 +355,7 @@ header h1 {
 .food .pdfs .pdf_item .pdf_desc,
 .shopping .pdfs .pdf_item .pdf_desc,
 .Symposiums .pdfs .pdf_item .pdf_desc {
+  z-index: 9;
   background-color: #3C6EB0;
   margin-top: -26px;
   padding: 15px 6px !important;

@@ -24,40 +24,76 @@
         class="pdfs d-flex justify-content-center align-items-center flex-column pt-5"
         style="gap: 20px"
       >
-        <div class="pdf_item wow fadeInLeft"
-        data-wow-duration="0.5s"
-        data-wow-delay="0.5s">
-          <img src="./assets/images/FEeZjpcXwAEOuT- (1).png" alt="" />
+        <div
+          class="pdf_item wow fadeInLeft"
+          data-wow-duration="0.5s"
+          data-wow-delay="0.5s"
+        >
+          <img src="./assets/images/la-roche-posay.jpg" alt="" />
           <div
             class="pdf_desc d-flex justify-content-between align-items-center flex-row p-2"
           >
-            <h6>La roche posay <br> symposium</h6>
-            <button id="pdf1"><img src="./assets/images/icons8-download-64.png" alt="" width="20" style="width: 30px;object-fit: contain"></button>
+            <h6>
+              La roche posay <br />
+              symposium
+            </h6>
+            <button id="pdf1">
+              <img
+                src="./assets/images/icons8-download-64.png"
+                alt=""
+                width="20"
+                style="width: 30px; object-fit: contain"
+              />
+            </button>
           </div>
         </div>
-        <div class="pdf_item wow fadeInLeft"
-        data-wow-duration="0.6s"
-        data-wow-delay="0.5s">
+        <div
+          class="pdf_item wow fadeInLeft"
+          data-wow-duration="0.6s"
+          data-wow-delay="0.5s"
+        >
           <img
-            src="./assets/images/28516733_1687533717973920_1144449360686774707_o.png"
+            src="./assets/images/vichy.jpg"
             alt=""
           />
           <div
             class="pdf_desc d-flex justify-content-between align-items-center flex-row p-2"
           >
-            <h6>Vichy <br> symposium</h6>
-            <button id="pdf2"><img src="./assets/images/icons8-download-64.png" alt="" width="20" style="width: 30px;object-fit: contain"></button>
+            <h6>
+              Vichy <br />
+              symposium
+            </h6>
+            <button id="pdf2">
+              <img
+                src="./assets/images/icons8-download-64.png"
+                alt=""
+                width="20"
+                style="width: 30px; object-fit: contain"
+              />
+            </button>
           </div>
         </div>
-        <div class="pdf_item wow fadeInLeft"
-        data-wow-duration="0.7s"
-        data-wow-delay="0.5s">
-          <img src="./assets/images/IMG_4426-1.png" alt="" />
+        <div
+          class="pdf_item wow fadeInLeft"
+          data-wow-duration="0.7s"
+          data-wow-delay="0.5s"
+        >
+          <img src="./assets/images/cerave65.jpg" alt="" />
           <div
             class="pdf_desc d-flex justify-content-between align-items-center flex-row p-2"
           >
-            <h6>Cerave <br> symposium</h6>
-            <button id="pdf3"><img src="./assets/images/icons8-download-64.png" alt="" width="20" style="width: 30px;object-fit: contain"></button>
+            <h6>
+              Cerave <br />
+              symposium
+            </h6>
+            <button id="pdf3">
+              <img
+                src="./assets/images/icons8-download-64.png"
+                alt=""
+                width="20"
+                style="width: 30px; object-fit: contain"
+              />
+            </button>
           </div>
         </div>
       </div>
@@ -70,71 +106,65 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
 
+
     <script>
-      document
-        .getElementById("pdf1")
-        .addEventListener("click", function () {
-          // Generate your PDF file or provide the URL of the PDF file
-          var pdfUrl = "/assets/Ahmed Yousry - Frontend developer.pdf";
+      document.getElementById("pdf1").addEventListener("click", function () {
+        // Generate your PDF file or provide the URL of the PDF file
+        var pdfUrl = "/LRP-WCD-SYMPOSIUM-FLYER.pdf";
 
-          // Create a hidden anchor element
-          var link = document.createElement("a");
-          link.href = pdfUrl;
-          link.download = "LRP WCD - SYMPOSIUM FLYER.pdf"; // Set the desired file name here
+        // Create a hidden anchor element
+        var link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "LRP WCD - SYMPOSIUM FLYER.pdf"; // Set the desired file name here
 
-          // Append the anchor element to the document body
-          document.body.appendChild(link);
+        // Append the anchor element to the document body
+        document.body.appendChild(link);
 
-          // Trigger the click event
-          link.click();
+        // Trigger the click event
+        link.click();
 
-          // Cleanup
-          document.body.removeChild(link);
-        });
+        // Cleanup
+        document.body.removeChild(link);
+      });
     </script>
     <script>
-      document
-        .getElementById("pdf2")
-        .addEventListener("click", function () {
-          // Generate your PDF file or provide the URL of the PDF file
-          var pdfUrl = "/assets/VICHY SYMPO WCD Flyer 2023.pdf";
+      document.getElementById("pdf2").addEventListener("click", function () {
+        // Generate your PDF file or provide the URL of the PDF file
+        var pdfUrl = "./assets/VICHY SYMPO WCD Flyer 2023.pdf";
 
-          // Create a hidden anchor element
-          var link = document.createElement("a");
-          link.href = pdfUrl;
-          link.download = "Vichy-symposium.pdf"; // Set the desired file name here
+        // Create a hidden anchor element
+        var link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "Vichy-symposium.pdf"; // Set the desired file name here
 
-          // Append the anchor element to the document body
-          document.body.appendChild(link);
+        // Append the anchor element to the document body
+        document.body.appendChild(link);
 
-          // Trigger the click event
-          link.click();
+        // Trigger the click event
+        link.click();
 
-          // Cleanup
-          document.body.removeChild(link);
-        });
+        // Cleanup
+        document.body.removeChild(link);
+      });
     </script>
     <script>
-      document
-        .getElementById("pdf3")
-        .addEventListener("click", function () {
-          // Generate your PDF file or provide the URL of the PDF file
-          var pdfUrl = "/assets/CeraVe WCD 2023 Symposium Flyer_Final.pdf";
+      document.getElementById("pdf3").addEventListener("click", function () {
+        // Generate your PDF file or provide the URL of the PDF file
+        var pdfUrl = "../assets/CeraVe WCD 2023 Symposium Flyer_Final.pdf";
+        // Create a hidden anchor element
+        var link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "Cerave-symposium.pdf"; // Set the desired file name here
 
-          // Create a hidden anchor element
-          var link = document.createElement("a");
-          link.href = pdfUrl;
-          link.download = "Cerave-symposium.pdf"; // Set the desired file name here
+        // Append the anchor element to the document body
+        document.body.appendChild(link);
 
-          // Append the anchor element to the document body
-          document.body.appendChild(link);
+        // Trigger the click event
+        link.click();
 
-          // Trigger the click event
-          link.click();
-
-          // Cleanup
-          document.body.removeChild(link);
-        });
+        // Cleanup
+        document.body.removeChild(link);
+      });
     </script>
   </body>
 </html>
