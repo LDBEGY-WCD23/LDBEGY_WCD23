@@ -251,7 +251,7 @@ header h1 {
 .food .description .desc_title a,
 .shopping .description .desc_title a,
 .Symposiums .description .desc_title a {
-  color: #11A5E4;
+  color: #3C6EB0;
   font-weight: bold;
 }
 
@@ -337,7 +337,7 @@ header h1 {
 .food .pdfs .pdf_item .pdf_desc,
 .shopping .pdfs .pdf_item .pdf_desc,
 .Symposiums .pdfs .pdf_item .pdf_desc {
-  background-color: #11A5E4;
+  background-color: #3C6EB0;
   margin-top: -26px;
   padding: 15px 6px !important;
   z-index: 9999;
@@ -402,7 +402,7 @@ header h1 {
 .food .modal-content .modal-body,
 .shopping .modal-content .modal-body,
 .Symposiums .modal-content .modal-body {
-  background-color: #11A5E4;
+  background-color: #3C6EB0;
   border-radius: 5px;
 }
 
@@ -468,7 +468,7 @@ header h1 {
 }
 
 .Scientific svg {
-  color: #11A5E4;
+  color: #3C6EB0;
   -webkit-margin-end: 6px;
           margin-inline-end: 6px;
   font-size: 18px;
@@ -542,7 +542,7 @@ header h1 {
 .shopping .shopping_item .shopping_desc a {
   border-radius: 9px;
   padding: 5px 7px;
-  color: #11A5E4;
+  color: #3C6EB0;
   font-weight: bold;
 }
 
@@ -569,7 +569,7 @@ header h1 {
 }
 
 .shopping ._link span {
-  background: #11A5E4;
+  background: #3C6EB0;
   padding: 7px 10px;
   color: #fff;
   -webkit-margin-start: 8px;
