@@ -244,17 +244,6 @@ header h1 {
   }
 }
 
-.Accommodation .description .desc_title a,
-.Symposiums .description .desc_title a,
-.Scientific .description .desc_title a,
-.food .description .desc_title a,
-.shopping .description .desc_title a,
-.Symposiums .description .desc_title a {
-  color: #3C6EB0;
-  font-weight: bold;
-  margin-top: -8px;
-}
-
 .Accommodation .description .desc_title p,
 .Symposiums .description .desc_title p,
 .Scientific .description .desc_title p,
@@ -263,6 +252,17 @@ header h1 {
 .Symposiums .description .desc_title p {
   line-height: 1.7;
   color: #000;
+}
+
+.Accommodation .description a,
+.Symposiums .description a,
+.Scientific .description a,
+.food .description a,
+.shopping .description a,
+.Symposiums .description a {
+  color: #3C6EB0;
+  font-weight: bold;
+  margin-top: -8px;
 }
 
 .Accommodation .pdfs .pdf_item,
