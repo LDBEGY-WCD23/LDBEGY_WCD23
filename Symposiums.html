@@ -52,10 +52,7 @@
           data-wow-duration="0.6s"
           data-wow-delay="0.5s"
         >
-          <img
-            src="./assets/images/vichy.jpg"
-            alt=""
-          />
+          <img src="./assets/images/vichy.jpg" alt="" />
           <div
             class="pdf_desc d-flex justify-content-between align-items-center flex-row p-2"
           >
@@ -106,64 +103,97 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
 
-
     <script>
       document.getElementById("pdf1").addEventListener("click", function () {
-        // Generate your PDF file or provide the URL of the PDF file
         var pdfUrl = "https://drive.google.com/file/d/1uJ5VmjD_4g52tA-Lwe_J9ElqYymbnPD9/view";
 
-        // Create a hidden anchor element
-        var link = document.createElement("a");
-        link.href = pdfUrl;
-        link.download = "LRP WCD - SYMPOSIUM FLYER.pdf"; // Set the desired file name here
+        // Extract the file ID from the Google Drive URL
+        var fileId = pdfUrl.match(/\/file\/d\/(.+?)\//)[1];
 
-        // Append the anchor element to the document body
-        document.body.appendChild(link);
+        // Construct the download URL using the file ID
+        var downloadUrl = "https://drive.google.com/uc?export=download&id=" + fileId;
 
-        // Trigger the click event
-        link.click();
+        // Use the Fetch API to download the PDF file
+        fetch(downloadUrl)
+          .then(response => response.blob())
+          .then(blob => {
+            // Create a temporary link element
+            var link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "LA-ROCHE-POSAY.pdf"; // Set the desired file name here
 
-        // Cleanup
-        document.body.removeChild(link);
+            // Append the link element to the document body
+            document.body.appendChild(link);
+
+            // Trigger the click event
+            link.click();
+
+            // Cleanup
+            document.body.removeChild(link);
+          })
+          .catch(error => console.error(error));
       });
     </script>
     <script>
       document.getElementById("pdf2").addEventListener("click", function () {
-        // Generate your PDF file or provide the URL of the PDF file
         var pdfUrl = "https://drive.google.com/file/d/18Ig2sF5VU4xWza0gQ8LTc4btOmn1cDge/view";
 
-        // Create a hidden anchor element
-        var link = document.createElement("a");
-        link.href = pdfUrl;
-        link.download = "Vichy-symposium.pdf"; // Set the desired file name here
+        // Extract the file ID from the Google Drive URL
+        var fileId = pdfUrl.match(/\/file\/d\/(.+?)\//)[1];
 
-        // Append the anchor element to the document body
-        document.body.appendChild(link);
+        // Construct the download URL using the file ID
+        var downloadUrl = "https://drive.google.com/uc?export=download&id=" + fileId;
 
-        // Trigger the click event
-        link.click();
+        // Use the Fetch API to download the PDF file
+        fetch(downloadUrl)
+          .then(response => response.blob())
+          .then(blob => {
+            // Create a temporary link element
+            var link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "Vichy-symposium.pdf"; // Set the desired file name here
 
-        // Cleanup
-        document.body.removeChild(link);
+            // Append the link element to the document body
+            document.body.appendChild(link);
+
+            // Trigger the click event
+            link.click();
+
+            // Cleanup
+            document.body.removeChild(link);
+          })
+          .catch(error => console.error(error));
       });
     </script>
     <script>
       document.getElementById("pdf3").addEventListener("click", function () {
-        // Generate your PDF file or provide the URL of the PDF file
         var pdfUrl = "https://drive.google.com/file/d/1heTboXBIZCZynqgDDhkbAbd1mvQNv8LP/view";
-        // Create a hidden anchor element
-        var link = document.createElement("a");
-        link.href = pdfUrl;
-        link.download = "Cerave-symposium.pdf"; // Set the desired file name here
 
-        // Append the anchor element to the document body
-        document.body.appendChild(link);
+        // Extract the file ID from the Google Drive URL
+        var fileId = pdfUrl.match(/\/file\/d\/(.+?)\//)[1];
 
-        // Trigger the click event
-        link.click();
+        // Construct the download URL using the file ID
+        var downloadUrl = "https://drive.google.com/uc?export=download&id=" + fileId;
 
-        // Cleanup
-        document.body.removeChild(link);
+        // Use the Fetch API to download the PDF file
+        fetch(downloadUrl)
+          .then(response => response.blob())
+          .then(blob => {
+            // Create a temporary link element
+            var link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "CERAVE.pdf"; // Set the desired file name here
+
+            // Append the link element to the document body
+            document.body.appendChild(link);
+
+            // Trigger the click event
+            link.click();
+
+            // Cleanup
+            document.body.removeChild(link);
+          })
+          .catch(error => console.error(error));
       });
     </script>
   </body>
