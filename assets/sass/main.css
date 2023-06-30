@@ -138,7 +138,8 @@ header h1 {
 .Symposiums,
 .Scientific,
 .food,
-.shopping {
+.shopping,
+.Symposiums {
   padding-bottom: 10px;
 }
 
@@ -146,7 +147,8 @@ header h1 {
 .Symposiums .title,
 .Scientific .title,
 .food .title,
-.shopping .title {
+.shopping .title,
+.Symposiums .title {
   padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,7 +167,8 @@ header h1 {
 .Symposiums .title svg,
 .Scientific .title svg,
 .food .title svg,
-.shopping .title svg {
+.shopping .title svg,
+.Symposiums .title svg {
   -webkit-margin-end: 5px;
           margin-inline-end: 5px;
   color: #000;
@@ -175,7 +178,8 @@ header h1 {
 .Symposiums .description,
 .Scientific .description,
 .food .description,
-.shopping .description {
+.shopping .description,
+.Symposiums .description {
   padding: 30px 0;
 }
 
@@ -183,25 +187,30 @@ header h1 {
 .Symposiums .description img,
 .Scientific .description img,
 .food .description img,
-.shopping .description img {
+.shopping .description img,
+.Symposiums .description img {
   width: 100%;
   border-radius: 3px;
   height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.Accommodation .description .col-8,
-.Symposiums .description .col-8,
-.Scientific .description .col-8,
-.food .description .col-8,
-.shopping .description .col-8 {
+.Accommodation .description .col-7,
+.Symposiums .description .col-7,
+.Scientific .description .col-7,
+.food .description .col-7,
+.shopping .description .col-7,
+.Symposiums .description .col-7 {
   padding-left: 5px;
 }
 
-.Accommodation .description .col-4,
-.Symposiums .description .col-4,
-.Scientific .description .col-4,
-.food .description .col-4,
-.shopping .description .col-4 {
+.Accommodation .description .col-5,
+.Symposiums .description .col-5,
+.Scientific .description .col-5,
+.food .description .col-5,
+.shopping .description .col-5,
+.Symposiums .description .col-5 {
   padding-right: 0;
 }
 
@@ -209,7 +218,8 @@ header h1 {
 .Symposiums .description .desc_title,
 .Scientific .description .desc_title,
 .food .description .desc_title,
-.shopping .description .desc_title {
+.shopping .description .desc_title,
+.Symposiums .description .desc_title {
   padding: 15px 0;
 }
 
@@ -217,17 +227,30 @@ header h1 {
 .Symposiums .description .desc_title h5,
 .Scientific .description .desc_title h5,
 .food .description .desc_title h5,
-.shopping .description .desc_title h5 {
+.shopping .description .desc_title h5,
+.Symposiums .description .desc_title h5 {
   font-weight: bold;
   color: #000;
   font-size: 16px;
+}
+
+@media (max-width: 360px) {
+  .Accommodation .description .desc_title h5,
+  .Symposiums .description .desc_title h5,
+  .Scientific .description .desc_title h5,
+  .food .description .desc_title h5,
+  .shopping .description .desc_title h5,
+  .Symposiums .description .desc_title h5 {
+    font-size: 14px;
+  }
 }
 
 .Accommodation .description .desc_title a,
 .Symposiums .description .desc_title a,
 .Scientific .description .desc_title a,
 .food .description .desc_title a,
-.shopping .description .desc_title a {
+.shopping .description .desc_title a,
+.Symposiums .description .desc_title a {
   color: #11A5E4;
   font-weight: bold;
 }
@@ -236,7 +259,8 @@ header h1 {
 .Symposiums .description .desc_title p,
 .Scientific .description .desc_title p,
 .food .description .desc_title p,
-.shopping .description .desc_title p {
+.shopping .description .desc_title p,
+.Symposiums .description .desc_title p {
   line-height: 1.7;
   color: #000;
 }
@@ -245,7 +269,8 @@ header h1 {
 .Symposiums .pdfs .pdf_item,
 .Scientific .pdfs .pdf_item,
 .food .pdfs .pdf_item,
-.shopping .pdfs .pdf_item {
+.shopping .pdfs .pdf_item,
+.Symposiums .pdfs .pdf_item {
   margin-bottom: 10px;
   width: 100%;
   margin: auto;
@@ -268,7 +293,8 @@ header h1 {
 .Symposiums .pdfs .pdf_item:nth-child(odd),
 .Scientific .pdfs .pdf_item:nth-child(odd),
 .food .pdfs .pdf_item:nth-child(odd),
-.shopping .pdfs .pdf_item:nth-child(odd) {
+.shopping .pdfs .pdf_item:nth-child(odd),
+.Symposiums .pdfs .pdf_item:nth-child(odd) {
   background-image: -webkit-gradient(linear, right top, left top, from(#0da6df45), to(#FFFFFF));
   background-image: linear-gradient(to left, #0da6df45, #FFFFFF);
 }
@@ -277,7 +303,8 @@ header h1 {
 .Symposiums .pdfs .pdf_item:nth-child(even),
 .Scientific .pdfs .pdf_item:nth-child(even),
 .food .pdfs .pdf_item:nth-child(even),
-.shopping .pdfs .pdf_item:nth-child(even) {
+.shopping .pdfs .pdf_item:nth-child(even),
+.Symposiums .pdfs .pdf_item:nth-child(even) {
   background-image: -webkit-gradient(linear, left top, right top, from(#0da6df45), to(#FFFFFF));
   background-image: linear-gradient(to right, #0da6df45, #FFFFFF);
 }
@@ -286,17 +313,30 @@ header h1 {
 .Symposiums .pdfs .pdf_item img,
 .Scientific .pdfs .pdf_item img,
 .food .pdfs .pdf_item img,
-.shopping .pdfs .pdf_item img {
+.shopping .pdfs .pdf_item img,
+.Symposiums .pdfs .pdf_item img {
   width: 350px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 355px) {
+  .Accommodation .pdfs .pdf_item img,
+  .Symposiums .pdfs .pdf_item img,
+  .Scientific .pdfs .pdf_item img,
+  .food .pdfs .pdf_item img,
+  .shopping .pdfs .pdf_item img,
+  .Symposiums .pdfs .pdf_item img {
+    width: 300px;
+  }
 }
 
 .Accommodation .pdfs .pdf_item .pdf_desc,
 .Symposiums .pdfs .pdf_item .pdf_desc,
 .Scientific .pdfs .pdf_item .pdf_desc,
 .food .pdfs .pdf_item .pdf_desc,
-.shopping .pdfs .pdf_item .pdf_desc {
+.shopping .pdfs .pdf_item .pdf_desc,
+.Symposiums .pdfs .pdf_item .pdf_desc {
   background-color: #11A5E4;
   margin-top: -26px;
   padding: 15px 6px !important;
@@ -305,11 +345,23 @@ header h1 {
   width: 350px;
 }
 
+@media (max-width: 355px) {
+  .Accommodation .pdfs .pdf_item .pdf_desc,
+  .Symposiums .pdfs .pdf_item .pdf_desc,
+  .Scientific .pdfs .pdf_item .pdf_desc,
+  .food .pdfs .pdf_item .pdf_desc,
+  .shopping .pdfs .pdf_item .pdf_desc,
+  .Symposiums .pdfs .pdf_item .pdf_desc {
+    width: 300px;
+  }
+}
+
 .Accommodation .pdfs .pdf_item .pdf_desc h6,
 .Symposiums .pdfs .pdf_item .pdf_desc h6,
 .Scientific .pdfs .pdf_item .pdf_desc h6,
 .food .pdfs .pdf_item .pdf_desc h6,
-.shopping .pdfs .pdf_item .pdf_desc h6 {
+.shopping .pdfs .pdf_item .pdf_desc h6,
+.Symposiums .pdfs .pdf_item .pdf_desc h6 {
   color: #fff;
   font-weight: bold;
   font-size: 15px;
@@ -319,7 +371,8 @@ header h1 {
 .Symposiums .pdfs .pdf_item .pdf_desc button,
 .Scientific .pdfs .pdf_item .pdf_desc button,
 .food .pdfs .pdf_item .pdf_desc button,
-.shopping .pdfs .pdf_item .pdf_desc button {
+.shopping .pdfs .pdf_item .pdf_desc button,
+.Symposiums .pdfs .pdf_item .pdf_desc button {
   background-color: #fff;
   border-radius: 0;
   padding: 5px 7px;
@@ -329,7 +382,8 @@ header h1 {
 .Symposiums .pdfs .pdf_item .pdf_desc button i,
 .Scientific .pdfs .pdf_item .pdf_desc button i,
 .food .pdfs .pdf_item .pdf_desc button i,
-.shopping .pdfs .pdf_item .pdf_desc button i {
+.shopping .pdfs .pdf_item .pdf_desc button i,
+.Symposiums .pdfs .pdf_item .pdf_desc button i {
   font-size: 15px;
 }
 
@@ -337,7 +391,8 @@ header h1 {
 .Symposiums .modal-content,
 .Scientific .modal-content,
 .food .modal-content,
-.shopping .modal-content {
+.shopping .modal-content,
+.Symposiums .modal-content {
   border: 0 !important;
 }
 
@@ -345,7 +400,8 @@ header h1 {
 .Symposiums .modal-content .modal-body,
 .Scientific .modal-content .modal-body,
 .food .modal-content .modal-body,
-.shopping .modal-content .modal-body {
+.shopping .modal-content .modal-body,
+.Symposiums .modal-content .modal-body {
   background-color: #11A5E4;
   border-radius: 5px;
 }
@@ -354,7 +410,8 @@ header h1 {
 .Symposiums .modal-content button,
 .Scientific .modal-content button,
 .food .modal-content button,
-.shopping .modal-content button {
+.shopping .modal-content button,
+.Symposiums .modal-content button {
   background-color: #fff;
   border: 1px solid #AEA9A9;
   position: absolute;
@@ -373,7 +430,8 @@ header h1 {
 .Symposiums .modal-content span,
 .Scientific .modal-content span,
 .food .modal-content span,
-.shopping .modal-content span {
+.shopping .modal-content span,
+.Symposiums .modal-content span {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
@@ -383,7 +441,8 @@ header h1 {
 .Symposiums .modal-content span:first-of-type,
 .Scientific .modal-content span:first-of-type,
 .food .modal-content span:first-of-type,
-.shopping .modal-content span:first-of-type {
+.shopping .modal-content span:first-of-type,
+.Symposiums .modal-content span:first-of-type {
   font-weight: 700;
   font-size: 20px;
 }
@@ -392,7 +451,8 @@ header h1 {
 .Symposiums .modal-content span:nth-child(2),
 .Scientific .modal-content span:nth-child(2),
 .food .modal-content span:nth-child(2),
-.shopping .modal-content span:nth-child(2) {
+.shopping .modal-content span:nth-child(2),
+.Symposiums .modal-content span:nth-child(2) {
   font-weight: 700;
   color: #FFC011;
   font-size: 26px;
@@ -515,5 +575,78 @@ header h1 {
   -webkit-margin-start: 8px;
           margin-inline-start: 8px;
   border: 1px solid #000;
+}
+
+.Symposiums_desc li {
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.Symposiums_desc li span {
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 10px !important;
+}
+
+.Symposiums_desc li p {
+  font-size: 0.94rem;
+  color: #000;
+  -webkit-margin-start: 21px;
+          margin-inline-start: 21px;
+  line-height: 1.7;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.Symposiums_desc li a {
+  -webkit-margin-start: 19px;
+          margin-inline-start: 19px;
+  text-decoration: underline !important;
+  color: #3C6EB0;
+}
+
+.Symposiums_desc li a svg {
+  font-size: 14px;
+}
+
+.Symposiums_desc li .desc__ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.Symposiums_desc li .desc__ img {
+  width: 83px;
+  height: 55px;
+}
+
+.Symposiums_desc li .desc__ h6 {
+  font-weight: bold;
+}
+
+.Symposiums_desc li .desc__ p {
+  margin: 0;
+}
+
+.Symposiums_desc li .desc__ a {
+  margin: 0;
+}
+
+.Symposiums_desc li .desc__ a svg {
+  color: #000;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
