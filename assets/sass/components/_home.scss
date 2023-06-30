@@ -188,7 +188,7 @@ header {
                     font-size: 15px;
                 }
 
-                button {
+                a {
                     background-color: #fff;
                     border-radius: 0;
                     padding: 3px;
@@ -329,11 +329,10 @@ header {
             font-size: 14px;
         }
         span {
-            background: #3C6EB0;
-            padding: 5px 10px 5px 5px;
-            color: #fff;
+            color: #3C6EB0;
             margin-inline-start: 8px;
-            border: 1px solid #000
+            font-size: 17px;
+            margin-top: 5px;
         }
     }
 }
@@ -389,4 +388,11 @@ header {
             }
         }
     }
+}
+.emergancy{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    color: #858383;
 }
