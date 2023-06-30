@@ -589,7 +589,7 @@ header h1 {
 
 .shopping ._link span {
   background: #3C6EB0;
-  padding: 0.5rem 1rem;
+  padding: 5px 10px 5px 5px;
   color: #fff;
   -webkit-margin-start: 8px;
           margin-inline-start: 8px;
