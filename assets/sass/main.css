@@ -557,8 +557,8 @@ header h1 {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #000;
-  width: 259px;
-  padding: 10px 15px;
+  width: 266px;
+  padding: 10px 0px 10px 10px;
   text-align: center;
   margin: auto;
 }
