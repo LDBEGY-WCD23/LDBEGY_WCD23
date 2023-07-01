@@ -159,6 +159,14 @@ header h1 {
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   color: #000;
   font-weight: 900;
+}
+
+.Accommodation .title h3,
+.Symposiums .title h3,
+.Scientific .title h3,
+.food .title h3,
+.shopping .title h3,
+.Symposiums .title h3 {
   text-transform: uppercase;
 }
 
